@@ -47,7 +47,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::OverseasCallback do
     it {
       expect(subject).to eq({
         "callback_date" => date_time.to_date,
-        "callback_time" => date_time.to_time, # rubocop:disable Rails/Date
+        "callback_time" => date_time.to_time,
       })
     }
 

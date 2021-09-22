@@ -60,7 +60,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::UkCallback do
     it {
       expect(subject).to eq({
         "callback_date" => date_time.to_date,
-        "callback_time" => date_time.to_time, # rubocop:disable Rails/Date
+        "callback_time" => date_time.to_time,
         "address_telephone" => address_telephone,
       })
     }
